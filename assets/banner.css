@@ -17,14 +17,13 @@
   margin-top: -347px;
   z-index: 1;
   position: relative;
-  background: red;
   margin-bottom:0px;
   padding:0px;
   height:1000px
 }
 .img2{
   display:block;
-  margin-top:-535px;
+  margin-top:-335px;
   margin-left:725px;
   position:relative;
   z-index:3;
