@@ -24,6 +24,7 @@
   background: yellow;
   display:block;
   margin-top:-300px;
+  line-height:0px;
 }
 
 .banner_lower{
