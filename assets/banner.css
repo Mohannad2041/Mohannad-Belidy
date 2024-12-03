@@ -56,6 +56,11 @@
   font-weight: 400;
   font-size:26px
 }
+.banner_button{
+  font-family:jost;
+  color:black;
+  
+}
 
 .banner_footer{
     background-color: #F5F5F5;
