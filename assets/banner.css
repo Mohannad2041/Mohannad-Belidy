@@ -34,13 +34,14 @@
 .banner_text{
   display:block;
   font-family: jost;
-  margin-top: -200px
+  margin-top: -200px;
+  left: 70px;
+
 }
 .title{
   position: relative;
   font-weight:500;
   font-size:100px;
-  left: 70px;
   line-height:150px
 }
 .subtitle{
