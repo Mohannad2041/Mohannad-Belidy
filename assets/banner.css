@@ -9,3 +9,7 @@
 .left_banner_header,.right_banner_header,.middle_banner_header{
     flex: 1;
 }
+
+.img1{
+  margin-top: -300px
+}
