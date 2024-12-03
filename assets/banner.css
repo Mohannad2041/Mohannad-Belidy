@@ -23,6 +23,7 @@
 .img2{
   background: yellow;
   display:block;
+  margin-top:-300px;
 }
 
 .banner_lower{
