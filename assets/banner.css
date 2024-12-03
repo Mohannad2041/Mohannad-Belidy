@@ -4,6 +4,7 @@
     justify-content: space-between;
     padding: 10px 50px 10px 50px;
     width: 100%;
+    z-index: 2;
 }
 
 .left_banner_header,.right_banner_header,.middle_banner_header{
@@ -11,5 +12,6 @@
 }
 
 .img1{
-  margin-top: -300px
+  margin-top: -300px;
+  z-index: 1;
 }
