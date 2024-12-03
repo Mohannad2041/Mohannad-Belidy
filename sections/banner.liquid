@@ -1,6 +1,46 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
-{% endschema %}
+{{'banner.css' |  asset_url | stylesheet_tag}}
+<div class="banner_header">
+    <div class="left_banner_header">
+        {{ section.settings.left_banner_header }}
+    </div>
+    <div class="middle_banner_header">
+        {{ section.settings.middle_banner_header }}
+    </div>
+    <div class="right_banner_header">
+        <button type="button"> {{section.settings.right_banner_header}}</button>
+    </div>
+</div>
+<div class="banner_content">
+
+</div>
+
+<div class="banner_footer">
+
+</div>
+
+{%  schema  %}
+    {
+        "name": "banner",
+        "settings": [
+            {
+                "type": "text",
+                "id": "left_banner_header",
+                "label": "Banner's Left Header",
+                "default": "TISSON VISON"
+            },
+            {
+                "type": "text",
+                "id": "middle_banner_header",
+                "label" : "Banner's Middle Header",
+                "default": "Find the ideal gift for your loved ones."
+            },
+            {
+                "type": "text",
+                "id": "right_banner_header",
+                "label": "Banner's Right Header",
+                "default": "CHOOSE GIFT"
+            }
+
+        ]
+    }
+{% endschema %} 
