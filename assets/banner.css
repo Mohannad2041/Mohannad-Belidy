@@ -18,12 +18,14 @@
   position: relative;
   background: red;
   margin-bottom:0px;
-  padding:0px
+  padding:0px;
+  height:1000px
 }
 .img2{
   background: yellow;
   display:block;
   margin-top:-600px;
+  margin
   
 }
 
