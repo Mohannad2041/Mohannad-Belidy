@@ -18,6 +18,9 @@
   position: relative;
   background: red
 }
+.img2{
+  background: yellow;
+}
 
 .banner_lower{
   display: flex;
