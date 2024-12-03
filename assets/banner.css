@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 .body{
-  font-family: jost;
-  color: black;
+  height:1000px
 }
 .banner_header{
     position: relative;
@@ -54,7 +53,8 @@
 }
 .subtitle{
   width: 35%;
- 
+  color:black;
+  font-family: jost;
   font-weight: 400;
   font-size:26px
 }
