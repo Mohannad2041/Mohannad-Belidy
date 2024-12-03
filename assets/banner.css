@@ -49,6 +49,8 @@
 }
 .subtitle{
   width: 35%;
+  color:black;
+  font-family: jost;
   font-weight: 400;
   font-size:26px
 }
