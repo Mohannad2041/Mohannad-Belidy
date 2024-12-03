@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
 .banner_header{
     position: relative;
@@ -33,7 +34,7 @@
 
 .banner_text{
   position:relative;
-  font-family:"Times New Roman"
+  font-family:"Times New Roman";
   display:block;
   margin-top: -200px;
   left: 70px;
