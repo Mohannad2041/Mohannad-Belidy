@@ -27,12 +27,8 @@
   
 }
 
-.banner_lower{
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  margin-top:-100px;
-  z-index: 2;
+.banner_text{
+  display:block;
 }
 
 .banner_footer{
