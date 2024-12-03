@@ -13,14 +13,19 @@
 <div class="banner_content">
   <img class="img1" src="{{ 'banner-logo.svg' | asset_url}}" width="100%" height="1000 px">
   <div class="banner_lower"> 
-    
-    <img class="img2" src="{{ 'banner-logo.svg' | asset_url}}" width="100%" height="1000 px">
+    <div class="banner_text">
+      {{ section.settings.banner_title }}
+      {{ section.settings.banner_subtitle }}
+    </div>
+    <div class="banner_right_image">
+      <img class="img2" src="{{ 'banner-logo.svg' | asset_url}}" width="100%" height="1000 px">
+    </div>
   </div> 
   
 </div>
 
 <div class="banner_footer">
-
+  {{ section.settings.banner_footer}}
 </div>
 
 {%  schema  %}
