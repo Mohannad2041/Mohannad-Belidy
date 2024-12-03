@@ -11,8 +11,12 @@
     </div>
 </div>
 <div class="banner_content">
-  <img src="{{ 'banner-logo.svg' | asset_url}}" width="100%" height="1000 px">
-  <img src="{{ 'banner-logo.svg' | asset_url}}" width="100%" height="1000 px">
+  <img class="img1" src="{{ 'banner-logo.svg' | asset_url}}" width="100%" height="1000 px">
+  <div class="banner_lower"> 
+    
+    <img class="img2" src="{{ 'banner-logo.svg' | asset_url}}" width="100%" height="1000 px">
+  </div> 
+  
 </div>
 
 <div class="banner_footer">
@@ -40,7 +44,31 @@
                 "id": "right_banner_header",
                 "label": "Banner's Right Header",
                 "default": "CHOOSE GIFT"
-            }
+            },
+            {
+              "type": "text",
+              "id": "banner_title",
+              "label": "Banner's Title",
+              "default" : "The Gift Guide"
+            },
+          {
+            "type": "text",
+            "id": "banner_subtitle",
+            "label": "Banner's Subtitle",
+            "default": "Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season."
+          },
+          {
+            "type": "text",
+            "id": "banner_button",
+            "label": "Banner's Button",
+            "default": "SHOP NOW"
+          },
+          {
+            "type": "text",
+            "id": "banner_footer",
+            "label": "Banner's Footer",
+            "default": "SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL"
+          }
 
         ]
     }
