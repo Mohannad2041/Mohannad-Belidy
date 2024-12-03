@@ -1,0 +1,11 @@
+.banner_header{
+    display: flex;
+    background-color: #F5F5F5;
+    justify-content: space-between;
+    padding: 10px 50px 10px 50px;
+    width: 100%;
+}
+
+.left_banner_header,.right_banner_header,.middle_banner_header{
+    flex: 1;
+}
