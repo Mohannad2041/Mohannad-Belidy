@@ -32,6 +32,7 @@
 }
 
 .banner_text{
+  position:relative;
   display:block;
   margin-top: -200px;
   left: 70px;
