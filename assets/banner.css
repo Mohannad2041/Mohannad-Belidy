@@ -1,5 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 .banner_header{
     position: relative;
     display: flex;
@@ -35,6 +34,11 @@
 
 .banner_text{
   display:block;
+  font-family: jost;
+}
+.title{
+  font-weight:500;
+  font-size:50px
 }
 
 .banner_footer{
