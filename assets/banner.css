@@ -17,3 +17,8 @@
   z-index: 1;
   position: relative;
 }
+
+.banner_lower{
+  display: flex;
+  flex-direction: row
+}
