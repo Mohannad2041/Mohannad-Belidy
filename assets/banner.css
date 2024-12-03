@@ -40,7 +40,8 @@
   position: relative;
   font-weight:500;
   font-size:90px;
-  left: 70px
+  left: 70px;
+  line-height:90px
 }
 
 .banner_footer{
