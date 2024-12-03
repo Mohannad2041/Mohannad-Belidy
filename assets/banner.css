@@ -12,6 +12,8 @@
 
 .left_banner_header,.right_banner_header,.middle_banner_header{
     flex: 1;
+    font-family:jost;
+    color:black;
 }
 
 .img1{
@@ -59,4 +61,6 @@
     background-color: #F5F5F5;
     width: 100%;
     text-align: center
+    font-family:jost;
+    color:black;
 }
