@@ -17,6 +17,7 @@
   z-index: 1;
   position: relative;
   background: red
+  margin-bottom:0px
 }
 .img2{
   background: yellow;
@@ -24,7 +25,7 @@
 
 .banner_lower{
   display: flex;
-  flex-direction: row
+  flex-direction: row;
   margin:0px
 }
 
