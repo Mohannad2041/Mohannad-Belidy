@@ -10,7 +10,7 @@
   {% else %}
     {% for product in all_products limit:6 %}
       <div class="product">
-        <img src="{{ product.featured_image }}" alt="{{ product.title }}" width="300px" height="300px">
+        <img src="{{ product.featured_image | image_url: '480x480' }}" alt="{{ product.title }}" width="300px" height="300px">
       </div>
     {% endfor %}
 
