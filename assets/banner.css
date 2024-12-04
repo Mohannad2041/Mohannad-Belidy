@@ -58,29 +58,27 @@
   position:relative;
   z-index:3; 
   bottom:10rem;
+  z-index:10
 
 }
 
 .banner_right_image{
   flex:1.6;
   overflow:hidden;
-  
-
 }
 
 .banner_content{
   display: flex;
   flex-direction: column;
-  
-  
 }
+
+
 .banner_lower{
   display: flex;
   height:47rem;
-  
-  
-  
 }
+
+
 .banner_text{
   flex:1;
   position:relative;
