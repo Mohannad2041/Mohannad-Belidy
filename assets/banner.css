@@ -15,7 +15,7 @@
     flex: 1;
     font-family:jost;
     color:black;
-    font-size:8rem
+    font-size:4rem
 }
 .middle_banner_header{
   flex:1;
@@ -102,4 +102,7 @@
     text-align: center;
     font-family:jost;
     color:black;
+    position:relative;
+    bottom:2rem;
+    
 }
