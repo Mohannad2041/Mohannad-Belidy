@@ -1,6 +1,22 @@
 <p>Tisso vison in the wild</p>
 
+<div class="grid">
+  {% if section.settings.product_list %}
+    {% for product in section.settings.product_list %}
+      <div class="product">
+        <img src="{{ product.featured_image }}" alt="{{ product.title }}" width="300px" height="300px">
+      </div>
+    {% endfor %}
+  {% else %}
+    {% for product in all_products limit:6 %}
+      <div class="product">
+        <img src="{{ product.featured_image }}" alt="{{ product.title }}" width="300px" height="300px">
+      </div>
+    {% endfor %}
 
+  {% endif %}
+
+</div>
 
 {% schema %}
   {
