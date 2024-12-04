@@ -68,13 +68,14 @@
 .banner_content{
   display: flex;
   flex-direction: column;
-    overflow-x:hidden;
-
+  
   
 }
 .banner_lower{
   display: flex;
   height:47rem;
+  overflow-x:hidden;
+
   
 }
 .banner_text{
