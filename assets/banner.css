@@ -30,9 +30,11 @@
   font-family:jost;
   color:black;
   text-align:right;
+
+}
+.banner_button{
   background: #FFF544;
 
-  
 }
 .img1_container{
   display:flex;
