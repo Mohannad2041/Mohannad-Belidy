@@ -19,7 +19,7 @@
 .img1_container{
   display:flex;
   position:relative;
-  bottom:26rem;
+  bottom:25rem;
   background:red;
   flex: 1;
 }
