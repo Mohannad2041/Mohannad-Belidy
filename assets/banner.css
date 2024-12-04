@@ -43,7 +43,8 @@
 .img1_container{
   display:flex;
   position:relative;
-  margin-top:-29rem;
+  margin-top:-25rem;
+  bottom:2rem;
   flex: 1;
 }
 
