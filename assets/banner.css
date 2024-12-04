@@ -74,6 +74,7 @@
 .banner_lower{
   display: flex;
   height:47rem;
+  overflow-y:hidden;
   
   
 }
