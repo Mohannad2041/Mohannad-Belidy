@@ -40,6 +40,10 @@
   z-index:3; 
 }
 
+.banner_right_image{
+  flex:1.6;
+}
+
 .banner_content{
   display: flex;
   flex-direction: column;
@@ -50,6 +54,7 @@
   
 }
 .banner_text{
+  flex:1;
   position:relative;
   font-family:jost;
   color:black;
