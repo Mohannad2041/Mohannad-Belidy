@@ -13,6 +13,10 @@
       "type": "banner",
       "settings": {}
     },
+    "grid": {
+      "type": "grid",
+      "settings": {}
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -83,6 +87,7 @@
   },
   "order": [
     "banner",
+    "grid",
     "image_banner",
     "featured_collection"
   ]
