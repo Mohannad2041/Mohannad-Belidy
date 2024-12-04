@@ -35,10 +35,10 @@
   z-index:3; 
 }
 
-/* .banner_content{
+.banner_content{
   display: flex;
   
-} */
+}
 
 .banner_text{
   position:relative;
