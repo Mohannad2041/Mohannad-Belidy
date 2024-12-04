@@ -23,6 +23,7 @@
   font-family:jost;
   color:black;
   text-align:center;
+  vertical-align:center;
 }
 .right_banner_header{
   flex:1;
