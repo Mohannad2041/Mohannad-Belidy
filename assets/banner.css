@@ -17,10 +17,12 @@
     color:black;
 }
 .img1_container{
+  display:flex;
   background:red;
   flex: 1;
 }
 .img1{
+  flex:1;
   margin-top: -347px;
   z-index: 1;
   position: relative;
