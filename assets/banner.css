@@ -55,20 +55,23 @@
   font-family:jost;
   color:black;
   display:block;
-  left:7rem;
 
 }
 .title{
   position: relative;
   font-weight:500;
   font-size:10rem;
-  line-height:150px
+  line-height:150px;
+  left:7rem;
+
 }
 .subtitle{
   color:black;
   font-family: jost;
   font-weight: 400;
   font-size:26px
+    left:7rem;
+
 }
 .banner_button{
   font-family:jost;
