@@ -66,6 +66,7 @@
 
 }
 .subtitle{
+  position:relative;
   color:black;
   font-family: jost;
   font-weight: 400;
