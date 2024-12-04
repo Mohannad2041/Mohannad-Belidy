@@ -18,7 +18,8 @@
 }
 .img1_container{
   display:flex;
-  bottom:10rem;
+  position:relative;
+  bottom:100rem;
   background:red;
   flex: 1;
 }
