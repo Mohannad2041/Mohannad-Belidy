@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 .page{
-  overflow-x:hidden
 }
 .banner_header{
     position: relative;
@@ -59,6 +58,8 @@
   position:relative;
   z-index:3; 
   bottom:10rem;
+    overflow-x:hidden
+
 }
 
 .banner_right_image{
@@ -74,7 +75,7 @@
 .banner_lower{
   display: flex;
   height:47rem;
-  overflow-y:hidden;
+  
   
   
 }
