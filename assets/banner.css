@@ -11,10 +11,23 @@
     z-index: 2;
 }
 
-.left_banner_header,.right_banner_header,.middle_banner_header{
+.left_banner_header{
     flex: 1;
     font-family:jost;
     color:black;
+}
+.middle_banner_header{
+  flex:1;
+  font-family:jost;
+  color:black;
+  text-align:center;
+}
+.right_banner_header{
+  flex:1;
+  font-family:jost;
+  color:black;
+  text-align:right;
+  
 }
 .img1_container{
   display:flex;
