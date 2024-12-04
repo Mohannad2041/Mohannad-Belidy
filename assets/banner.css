@@ -58,12 +58,13 @@
   position:relative;
   z-index:3; 
   bottom:10rem;
-  overflow-x:hidden
 
 }
 
 .banner_right_image{
   flex:1.6;
+  overflow-x:hidden
+
 }
 
 .banner_content{
