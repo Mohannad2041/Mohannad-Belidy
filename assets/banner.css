@@ -16,7 +16,9 @@
     font-family:jost;
     color:black;
 }
-
+.img1_container{
+  background-color:red;
+}
 .img1{
   margin-top: -347px;
   z-index: 1;
