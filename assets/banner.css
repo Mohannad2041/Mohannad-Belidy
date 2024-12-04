@@ -116,5 +116,6 @@
     font-family:jost;
     color:black;
     position:relative;
+    z-index:3;
     
 }
