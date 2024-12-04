@@ -18,6 +18,7 @@
 }
 .img1_container{
   background:red;
+  flex: 1;
 }
 .img1{
   margin-top: -347px;
