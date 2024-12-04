@@ -11,11 +11,28 @@
   "sections": {
     "banner": {
       "type": "banner",
-      "settings": {}
+      "settings": {
+        "left_banner_header": "TISSON VISON",
+        "middle_banner_header": "Find the ideal gift for your loved ones.",
+        "right_banner_header": "CHOOSE GIFT &#8594",
+        "banner_title": "The Gift Guide",
+        "banner_subtitle": "Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.",
+        "banner_button": "SHOP NOW &#8594;",
+        "banner_footer": "SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL"
+      }
     },
     "grid": {
       "type": "grid",
-      "settings": {}
+      "settings": {
+        "product_list": [
+          "black-leather-bag",
+          "blue-silk-tuxedo",
+          "chequered-red-shirt",
+          "classic-leather-jacket",
+          "classic-varsity-top",
+          "dark-denim-top"
+        ]
+      }
     },
     "image_banner": {
       "type": "image-banner",
