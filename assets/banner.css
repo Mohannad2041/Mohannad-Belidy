@@ -30,8 +30,11 @@
   margin-top:-335px;
   margin-left:725px;
   position:relative;
-  z-index:3;
-  
+  z-index:3; 
+}
+
+.banner_content{
+  display: flex;
   
 }
 
@@ -47,7 +50,7 @@
 .title{
   position: relative;
   font-weight:500;
-  font-size:95px;
+  font-size:95rem;
   line-height:150px
 }
 .subtitle{
@@ -63,7 +66,7 @@
   background: #FFF544;
   height:70px;
   width: 310px;
-  font-size: 30px
+  font-size: 22px
   
 }
 
