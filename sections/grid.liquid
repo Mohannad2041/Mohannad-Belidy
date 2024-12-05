@@ -4,24 +4,24 @@
 
 <div class="grid">
     {% for product in section.settings.product_list %}
-      <div class="product">
+      <div class="product" data-image = "{{ product.featured_image|img_url:"600x600" }}" data-title="{{ product.title }}" data-price="{{ product.price | money }}" data-description= "{{ product.description }}">
         <img src="{{ product.featured_image| img_url: '480x480' }}" alt="{{ product.title }}" width="600px" height="600px">
       </div>
     {% endfor %}
 </div>
 
-<div class="modal">
-    <span class="modal_close_button">
+<div id="modal" class="modal">
+    <span id="modalCloseButton" class="modal_close_button">
       &#10006;
     </span>
   <div class="modal_content">
     <div class="modal_img_container">
-      <img class="modal_img" src="{{ product.featured_image| img_url: '480x480' }}" alt="{{ product.title }}" width="100px" height="100px">
+      <img id="modalImage" class="modal_img" src="{{ product.featured_image| img_url: '480x480' }}" alt="{{ product.title }}" width="100px" height="100px">
     </div>
     <div class="modal_text">
-      <h2 class="modal_title"> product title </h2>
-      <p class="modal_price"> Product Price </p>
-      <p class="modal_description"> Product description </p>
+      <h2 id="modalTitle" class="modal_title"> product title </h2>
+      <p id="modalPrice" class="modal_price"> Product Price </p>
+      <p id="modalDescription" class="modal_description"> Product description </p>
     </div> 
   </div>
   
@@ -32,7 +32,35 @@
   <div class="modal_size_selection">
     
   </div>
+
+  <div class="add_to_cart">
+  </div>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded',()=>{
+    
+    const modal = document.getElementById('modal');
+    const modalCloseButton=document.getElementById('modalCloseButton')
+    document.querySelectorAll(.product).forEach((product) =>{
+      product.addEventListener('click',(e) =>{
+        const productData= e.currentTarget.dataset
+        document.getElementById('modalImage')=productData.image;
+        document.getElementById('modalTitle')=productData.title;
+        document.getElementById('modalPrice')=productData.price;
+        document.getElementById('modalDescription')=productData.description;
+
+        modal.style.display='block';
+
+      });
+    });
+    closeModalButton.addEventListener('click', ()=>{
+      modal.style.display='none';
+    })
+    
+  })
+  
+</script>
 
 {% schema %}
   {
