@@ -45,7 +45,7 @@
     document.querySelectorAll('.product').forEach((product) =>{
       product.addEventListener('click',(e) =>{
         const productData= e.currentTarget.dataset
-        document.getElementById('modalImage')=productData.image;
+        document.getElementById('modalImage').src=productData.image;
         document.getElementById('modalTitle')=productData.title;
         document.getElementById('modalPrice')=productData.price;
         document.getElementById('modalDescription')=productData.description;
