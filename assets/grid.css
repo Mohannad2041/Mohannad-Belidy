@@ -9,3 +9,22 @@
   cursor:pointer;
   
 }
+
+.modal{
+  display:none;
+  position:fixed;
+  width:30%;
+  height:50%
+}
+
+.modal_content{
+  display:flex;
+  
+}
+.modal_img{
+  flex:1;
+  
+}
+.modal_text{
+  felx:1.2;
+}
