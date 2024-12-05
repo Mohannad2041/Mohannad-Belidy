@@ -11,12 +11,22 @@
 </div>
 
 <div class="modal">
-  <div class="modal_content">
     <span class="modal_close_button">
       &#10006;
     </span>
-
-     {{ "heloooooooooooo" }}
+  <div class="modal_content">
+    <img src="{{ product.featured_image| img_url: '480x480' }}" alt="{{ product.title }}" width="150px" height="150px">
+    <h2 class="modal_title"> product title </h2>
+    <p class="modal_price"> Product Price </p>
+    <p class="modal_description"> Product description </p>
+    
+    
+  </div>
+  <div class="modal_color_selection">
+    
+  </div>
+  <div class="modal_size_selection">
+    
   </div>
 </div>
 
