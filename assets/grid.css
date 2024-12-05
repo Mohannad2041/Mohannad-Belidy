@@ -11,7 +11,7 @@
 }
 
 .modal{
-  display:none;
+  display:block;
   position:fixed;
   width:30%;
   height:50%
