@@ -32,9 +32,10 @@
   
 }
 .modal_img{
-  flex:1.2;
+  flex:1;
+  
   
 }
 .modal_text{
-  felx:1;
+  felx:1.2;
 }
