@@ -10,12 +10,12 @@
   
 }
 
-/* .modal{
-  display:none;
+.modal{
+  /* display:none; */
   position:fixed;
   width:30%;
   height:50%
-} */
+}
 
 .modal_content{
   display:flex;
