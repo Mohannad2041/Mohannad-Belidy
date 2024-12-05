@@ -13,7 +13,7 @@
 .modal{
   display:block;
   position:fixed;
-  top:50%;
+  top:20%;
   left:40%;
   width:20%;
   height:50%;
@@ -32,9 +32,9 @@
   
 }
 .modal_img{
-  flex:1;
+  flex:1.2;
   
 }
 .modal_text{
-  felx:1.2;
+  felx:1;
 }
