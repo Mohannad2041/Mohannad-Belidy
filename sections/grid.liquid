@@ -50,7 +50,7 @@
         document.getElementById('modalTitle').innerText=productData.title;
         document.getElementById('modalPrice').innerText=productData.price;
         document.getElementById('modalDescription').innerText=productData.description;
-        for(int i = 0; i<productData.colors.length;i++){
+        for(let i = 0; i<productData.colors.length;i++){
             document.getElementById(modalColors[i]).innerText=productData.colors[i];
             console.log(productData.colors[i]);
         }
