@@ -50,9 +50,9 @@
         document.getElementById('modalTitle').innerText=productData.title;
         document.getElementById('modalPrice').innerText=productData.price;
         document.getElementById('modalDescription').innerText=productData.description;
-        for(let i = 0; i<productData.colors.values.length;i++){
+        for(let i = 0; i<productData.colors.length;i++){
             // document.getElementById(modalColors[i]).innerText=productData.colors[i];
-            console.log(productData.colors.values[i]);
+            console.log(productData.colors[i]);
         }
 
         modal.style.display='block';
