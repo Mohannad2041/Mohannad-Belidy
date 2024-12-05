@@ -21,7 +21,7 @@
   background-color:white;
 }
 .modal_close_button{
-  position:relative;
+  position:absolute;
   top:5px;
   right:5px;
   cursor:pointer;
