@@ -27,7 +27,7 @@
     </div> 
   </div>
   
-  <div id="modalColor" class="modal_color_selection">
+  <div id="modalColors" class="modal_color_selection">
   </div>
   
   <div class="modal_size_selection">
@@ -51,7 +51,7 @@
         document.getElementById('modalPrice').innerText=productData.price;
         document.getElementById('modalDescription').innerText=productData.description;
         for(let i = 0; i<productData.colors.length;i++){
-            document.getElementById(modalColors[i]).innerText=productData.colors[i];
+            // document.getElementById(modalColors[i]).innerText=productData.colors[i];
             console.log(productData.colors[i]);
         }
 
