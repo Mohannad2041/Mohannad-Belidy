@@ -20,7 +20,7 @@
   opacity:0.5;
 }
 .modal_close_button{
-  position:absolute;
+  position:relative;
   top:5px;
   right:5px;
 }
