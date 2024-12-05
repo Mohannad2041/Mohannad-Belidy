@@ -3,7 +3,7 @@
   justify-content:space-around;
   display: flex;
   flex-wrap: wrap;
-  gap:10px;
+  gap:100px;
 }
 
 .product{
