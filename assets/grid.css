@@ -19,6 +19,11 @@
   background-color:black;
   opacity:0.5;
 }
+.modal_close_button{
+  position:absolute;
+  top:5px;
+  right:5px;
+}
 
 .modal_content{
   display:flex;
