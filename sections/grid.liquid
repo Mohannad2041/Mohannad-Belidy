@@ -46,9 +46,9 @@
       product.addEventListener('click',(e) =>{
         const productData= e.currentTarget.dataset
         document.getElementById('modalImage').src=productData.image;
-        document.getElementById('modalTitle')=productData.title;
-        document.getElementById('modalPrice')=productData.price;
-        document.getElementById('modalDescription')=productData.description;
+        document.getElementById('modalTitle').innerText=productData.title;
+        document.getElementById('modalPrice').innerText=productData.price;
+        document.getElementById('modalDescription').innerText=productData.description;
 
         modal.style.display='block';
 
