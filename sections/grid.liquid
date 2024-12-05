@@ -15,16 +15,20 @@
       &#10006;
     </span>
   <div class="modal_content">
-    <img src="{{ product.featured_image| img_url: '480x480' }}" alt="{{ product.title }}" width="150px" height="150px">
-    <h2 class="modal_title"> product title </h2>
-    <p class="modal_price"> Product Price </p>
-    <p class="modal_description"> Product description </p>
-    
-    
+    <div class="modal_img">
+      <img src="{{ product.featured_image| img_url: '480x480' }}" alt="{{ product.title }}" width="150px" height="150px">
+    </div>
+    <div class="modal_text">
+      <h2 class="modal_title"> product title </h2>
+      <p class="modal_price"> Product Price </p>
+      <p class="modal_description"> Product description </p>
+    </div> 
   </div>
+  
   <div class="modal_color_selection">
     
   </div>
+  
   <div class="modal_size_selection">
     
   </div>
