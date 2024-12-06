@@ -53,8 +53,8 @@
         document.getElementById('modalDescription').innerText=productData.description;
         console.log(productData.options);
         const options=JSON.parse(productData.options);
-        const sizesOption=options[0].values;
-        const colorOption=options[1].values;
+        const sizesOption=options[0];
+        const colorOption=options[1];
         console.log(colorOption.values);
         if(colorOption){
           [...colorOption.values].forEach((color) =>{
