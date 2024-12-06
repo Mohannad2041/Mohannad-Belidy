@@ -51,8 +51,8 @@
         document.getElementById('modalPrice').innerText=productData.price;
         document.getElementById('modalDescription').innerText=productData.description;
         for(options in productData.options){
-          console.log(options);
-          if(options == 'Color'){
+          console.log(options.name);
+          if(options.name == 'Color'){
             for(values in options.values){
               console.log(values);
             }
