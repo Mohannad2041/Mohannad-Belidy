@@ -56,6 +56,8 @@
         const options=JSON.parse(productData.options);
         const sizeOption=options[0];
         const colorOption=options[1];
+        modalColors.innerHTML = '';
+        modalSizes.innerHTML = '';
         
         if(colorOption){
           colorOption.values.forEach((color) =>{
