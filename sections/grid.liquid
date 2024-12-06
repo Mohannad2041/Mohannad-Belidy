@@ -50,6 +50,8 @@
         document.getElementById('modalTitle').innerText=productData.title;
         document.getElementById('modalPrice').innerText=productData.price;
         document.getElementById('modalDescription').innerText=productData.description;
+        const options = JSON.parse(productData.options);
+        console.log(options);
         for(options in JSON.parse(productData.options)){
           console.log(options.name);
           if(options.name == 'Size'){
