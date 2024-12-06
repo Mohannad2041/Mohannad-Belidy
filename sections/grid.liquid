@@ -53,14 +53,37 @@
         document.getElementById('modalDescription').innerText=productData.description;
         console.log(productData.options);
         const options=JSON.parse(productData.options);
-        const sizes=options[0].values;
-        console.log(sizes);
-        for(option in options){
-          console.log(option.name);
+        const sizesOption=options[0].values;
+        const colorOption=options[1].values;
+
+        if(colorOption){
+          colorOption.values.forEach((color) =>{
+            const colorContainer = document.createElement('div');
+            colorContainer.classlist.add('color_container');
+  
+            const colorChoice=document.createElement('div');
+            const colorShowcase=document.createElement('span');
+            const colorName=document.createElement('span');
+            colorChoice.classlist.add('color_choice');
+            colorShowcase.classlist.add('color_showcase');
+            colorName.classlist.add('color_name');
+            colorShowcase.style.backgroundColor=color;
+            colorName.innertext=color;
+            colorContainer.appendChild(colorChoice);
+            colorChoice.appendChild(colorShowcase);  
+            colorChoice.appendChild(colorName);
+
+            colorContainer.addEventListener('click', (){
+              doucment.querySelectorAll('.color_container').forEach(choice => {
+                choice.classlist.remove('selected');
+              });
+              colorContainer.classlist.add('selected');
+            });
+        });
+          
         }
 
         modal.style.display='block';
-
       });
     });
     modalCloseButton.addEventListener('click', ()=>{
