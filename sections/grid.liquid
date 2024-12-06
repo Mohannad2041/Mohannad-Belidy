@@ -51,11 +51,12 @@
         document.getElementById('modalTitle').innerText=productData.title;
         document.getElementById('modalPrice').innerText=productData.price;
         document.getElementById('modalDescription').innerText=productData.description;
-        console.log(productData.options);
+
+        
         const options=JSON.parse(productData.options);
         const sizesOption=options[0];
         const colorOption=options[1];
-        console.log(colorOption.values);
+        
         if(colorOption){
           colorOption.values.forEach((color) =>{
             const colorContainer = document.createElement('div');
@@ -75,10 +76,10 @@
             modalColors.appendChild(colorContainer);
 
             colorContainer.addEventListener('click', ()=>{
-              doucment.querySelectorAll('.color_container').forEach(choice => {
-                choice.classlist.remove('selected');
+              document.querySelectorAll('.color_container').forEach(choice => {
+                choice.classList.remove('selected');
               });
-              colorContainer.classlist.add('selected');
+              colorContainer.classList.add('selected');
             });
         });
           
