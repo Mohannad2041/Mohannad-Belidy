@@ -7,7 +7,7 @@
       <div class="product" data-image = "{{ product.featured_image|img_url:"600x600" }}" data-title="{{ product.title }}" data-price="{{ product.price | money }}" data-description= "{{ product.description }}" 
         data-options= "{{ product.options_with_values | json}}" >
         <img src="{{ product.featured_image| img_url: '480x480' }}" alt="{{ product.title }}" width="600px" height="600px">
-        <p>{{ product.options_with_values[0] }}</p>
+        <p>{{ product.options_with_values[0].values }}</p>
 
       </div>
     {% endfor %}
