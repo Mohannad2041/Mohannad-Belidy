@@ -50,12 +50,12 @@
         document.getElementById('modalTitle').innerText=productData.title;
         document.getElementById('modalPrice').innerText=productData.price;
         document.getElementById('modalDescription').innerText=productData.description;
-        for(options in productData.options){
-          console.log(options.name);
-          if(options.name == 'Size'){
-            for(values in options.values){
-              console.log(values);
-            }
+        for(value in productData.options[0]){
+          console.log(value);
+          // if(options.name == 'Size'){
+          //   for(values in options.values){
+          //     console.log(values);
+          //   }
           }
         }
         // for(let i = 0; i<productData.colors.length;i++){
