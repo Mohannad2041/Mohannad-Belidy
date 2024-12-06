@@ -59,14 +59,14 @@
         if(colorOption){
           colorOption.values.forEach((color) =>{
             const colorContainer = document.createElement('div');
-            colorContainer.classlist.add('color_container');
+            colorContainer.classList.add('color_container');
   
             const colorChoice=document.createElement('div');
             const colorShowcase=document.createElement('span');
             const colorName=document.createElement('span');
-            colorChoice.classlist.add('color_choice');
-            colorShowcase.classlist.add('color_showcase');
-            colorName.classlist.add('color_name');
+            colorChoice.classList.add('color_choice');
+            colorShowcase.classList.add('color_showcase');
+            colorName.classList.add('color_name');
             colorShowcase.style.backgroundColor=color;
             colorName.innertext=color;
             colorContainer.appendChild(colorChoice);
