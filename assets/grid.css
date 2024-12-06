@@ -40,3 +40,27 @@
 .modal_text{
   felx:1.2;
 }
+
+.modal_color_selection{
+  
+}
+
+
+.color_Container{
+  display:flex;
+}
+
+.colorChoice{
+  display:flex;
+}
+
+.colorShowcase{
+  flex:0.2;
+}
+.colorName{
+  flex:1;
+}
+
+
+
+
