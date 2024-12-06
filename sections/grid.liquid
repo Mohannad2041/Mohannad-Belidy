@@ -62,7 +62,7 @@
         if(colorOption){
           colorOption.values.forEach((color) =>{
             const colorChoice = document.createElement('div');
-            colorChoice.classList.add('color_container');
+            colorChoice.classList.add('color_choice');
   
             const colorChoice=document.createElement('div');
             const colorShowcase=document.createElement('span');
@@ -76,7 +76,7 @@
             modalColors.appendChild(colorChoice);
 
             colorChoice.addEventListener('click', () => {
-            document.querySelectorAll('.color-option').forEach(el => {
+            document.querySelectorAll('.color-choice').forEach(el => {
               el.querySelector('span').style.backgroundColor = 'white';
             });
             colorName.style.backgroundColor = 'black'; 
