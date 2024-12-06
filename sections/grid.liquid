@@ -77,12 +77,12 @@
             colorChoice.appendChild(colorName);
             modalColors.appendChild(colorContainer);
 
-            colorContainer.addEventListener('click', ()=>{
-              document.querySelectorAll('.color_container').forEach(choice => {
-                choice.classList.remove('selected');
-              });
-              colorContainer.classList.add('selected');
+            colorDiv.addEventListener('click', () => {
+            document.querySelectorAll('.color-option').forEach(el => {
+              el.querySelector('span').style.backgroundColor = 'white';
             });
+            colorName.style.backgroundColor = 'black'; 
+          });
         });
           
         }
