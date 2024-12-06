@@ -5,9 +5,9 @@
 <div class="grid">
     {% for product in section.settings.product_list %}
       <div class="product" data-image = "{{ product.featured_image|img_url:"600x600" }}" data-title="{{ product.title }}" data-price="{{ product.price | money }}" data-description= "{{ product.description }}" 
-        data-options= "{{ product.options_with_values | json}}" >
+        data-options= "{{ product.options_with_values}}" >
         <img src="{{ product.featured_image| img_url: '480x480' }}" alt="{{ product.title }}" width="600px" height="600px">
-        <p>{{ product.options_with_values[1].values }}</p>
+        
 
       </div>
     {% endfor %}
@@ -51,7 +51,7 @@
         document.getElementById('modalTitle').innerText=productData.title;
         document.getElementById('modalPrice').innerText=productData.price;
         document.getElementById('modalDescription').innerText=productData.description;
-        for(options in JSON.parse(productData.options)){
+        for(options in productData.options){
           console.log(options.name);
           if(options.name == 'Size'){
             for(values in options.values){
