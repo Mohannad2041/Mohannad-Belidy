@@ -85,6 +85,23 @@
           
         }
 
+        if (sizeOption) {
+        const sizeSelect = document.createElement('select'); 
+        sizeOption.values.forEach((size) => {
+          const sizeOptionElement = document.createElement('option');
+          sizeOptionElement.value = size;
+          sizeOptionElement.innerText = size;
+          sizeSelect.appendChild(sizeOptionElement);
+        });
+        modalSizes.appendChild(sizeSelect); 
+
+        sizeSelect.addEventListener('change', () => {
+          const selectedSize = sizeSelect.value;
+          console.log('Selected size: ' + selectedSize);
+        });
+      }
+
+
         modal.style.display='block';
       });
     });
