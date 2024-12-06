@@ -50,8 +50,8 @@
         document.getElementById('modalTitle').innerText=productData.title;
         document.getElementById('modalPrice').innerText=productData.price;
         document.getElementById('modalDescription').innerText=productData.description;
-        for(values in productData.options[0]){
-          console.log(values);
+        for(options in productData.options){
+          console.log(options);
           if(options.name == 'Size'){
             for(values in options.values){
               console.log(values);
