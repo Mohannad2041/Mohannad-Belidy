@@ -52,6 +52,10 @@
         document.getElementById('modalPrice').innerText=productData.price;
         document.getElementById('modalDescription').innerText=productData.description;
         console.log(productData.options);
+        const options=JSON.parse(productData.options)
+        for(option in options){
+          console.log(option.name);
+        }
 
         modal.style.display='block';
 
