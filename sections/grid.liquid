@@ -57,7 +57,7 @@
         const colorOption=options[1];
         console.log(colorOption.values);
         if(colorOption){
-          [...colorOption.values].forEach((color) =>{
+          colorOption.values.forEach((color) =>{
             const colorContainer = document.createElement('div');
             colorContainer.classlist.add('color_container');
   
