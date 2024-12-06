@@ -53,7 +53,8 @@
         document.getElementById('modalDescription').innerText=productData.description;
         console.log(productData.options);
         const options=JSON.parse(productData.options);
-        console.log(options[0].values);
+        const sizes=options[0].values;
+        console.log(sizes);
         for(option in options){
           console.log(option.name);
         }
