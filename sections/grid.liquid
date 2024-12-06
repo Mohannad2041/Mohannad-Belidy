@@ -55,7 +55,7 @@
         const options=JSON.parse(productData.options);
         const sizesOption=options[0].values;
         const colorOption=options[1].values;
-
+        console.log(colorOption);
         if(colorOption){
           colorOption.values.forEach((color) =>{
             const colorContainer = document.createElement('div');
