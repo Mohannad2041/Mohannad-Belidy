@@ -151,6 +151,7 @@
   
   .mobile_banner_content{
     display:flex;
+    flex-direction:row;
   }
   .mobile_banner_text{
     flex:0.8;
