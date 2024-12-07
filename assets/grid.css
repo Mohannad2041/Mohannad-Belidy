@@ -154,7 +154,7 @@
   cursor:pointer;
 }
 
-.add_to_cart_button :hover{
+.add_to_cart_button:hover{
   background-color:yellow;
 }
 
