@@ -63,13 +63,15 @@
 .modal_title{
   font-family:jost;
   word-spacing:0.1px;
+  font-size:20px;
 
 }
 .modal_price{
+  font-size:20px;
 }
 
 .modal_description{
-  font-size:12px;
+  font-size:16px;
   font-family:jost;
   word-spacing:0.1px;
 
