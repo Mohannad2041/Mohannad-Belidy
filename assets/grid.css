@@ -37,7 +37,8 @@
 .modal_content{
   display:flex;
   background-color:white;
-  height:40%
+  height:40%;
+  padding-top:30px;
   
 }
 .modal_img_container{
