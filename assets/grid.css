@@ -149,6 +149,7 @@
 }
 
 .size_select{
+  position:relative;
   width:100%;
   height:10%;
 }
