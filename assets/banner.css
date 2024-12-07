@@ -161,11 +161,10 @@
   .mobile_img_container{
     flex:1;
     overflow: hidden;
-    height:200rem;
     
   }
   .mobile_img{
-    width:150%;
+    width:200%;
     position:relative;
     right:100px;
     
