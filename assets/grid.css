@@ -76,10 +76,13 @@
 }
 
 .modal_description{
+  position:relative;
   font-size:14px;
   font-family: "Jost", serif;
   word-spacing:0.1px;
   font-weight:400;
+  top:10px;
+  
 
 }
 .color_div_title{
