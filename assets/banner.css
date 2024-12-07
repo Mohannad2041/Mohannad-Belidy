@@ -174,7 +174,8 @@
      font-size:2.2rem;
      font-weight:400;
     color:black;
-    padding:10rem;
+    padding-right:10rem;
+    padding-left:10rem;
   }
   .mobile_img_container{
     flex:1;
