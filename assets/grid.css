@@ -35,10 +35,10 @@
   
 }
 .modal_img_container{
-  position: relative;
+  /* position: relative; */
   flex:1;
-  margin-left: 10px;
-  margin-top : 10px;
+  /* margin-left: 10px;
+  margin-top : 10px; */
 }
 .modal_img{
 width:100%;  
