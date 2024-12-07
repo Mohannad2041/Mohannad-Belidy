@@ -55,7 +55,7 @@
         document.getElementById('modalImage').src=productData.image;
         document.getElementById('modalTitle').innerText=productData.title;
         document.getElementById('modalPrice').innerText=productData.price;
-        document.getElementById('modalDescription').innerText=productData.description;
+        document.getElementById('modalDescription').innerHTML=productData.description;
 
         
         const options=JSON.parse(productData.options);
