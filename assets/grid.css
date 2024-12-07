@@ -151,6 +151,11 @@
   height:50px;
   position:relative;
   top:80px;
+  cursor:pointer;
+}
+
+.add_to_cart_button{
+  
 }
 
 
