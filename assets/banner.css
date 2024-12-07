@@ -148,9 +148,11 @@
   }
   
   .mobile_banner_content{
-    display:block;
+    display:flex;
   }
-  
+  .mobile_img_container{
+    
+  }
 
  
 }
