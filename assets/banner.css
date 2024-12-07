@@ -130,7 +130,7 @@
   display:none;
 }
 
-@media screen and (max-width:968){
+@media screen and (max-width:968px){
   .banner_header{
     display:none;
   }
