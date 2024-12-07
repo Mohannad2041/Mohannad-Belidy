@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
-
-@media (min-width:700px) {
 .page{
 }
 .banner_header{
@@ -131,8 +129,8 @@
 .mobile_banner_header{
   display:none;
 }
-}
-@media (max-width:700px){
+
+@media screen and (max-width:968){
   .banner_header{
     display:none;
   }
