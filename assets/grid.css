@@ -62,7 +62,7 @@
 }
 
 .modal_title{
-  font-family:jost;
+  font-family: "Jost", serif;
   word-spacing:0.1px;
   font-size:20px;
 
@@ -75,14 +75,14 @@
 
 .modal_description{
   font-size:16px;
-  font-family:jost;
+  font-family: "Jost", serif;
   word-spacing:0.1px;
   font-weight:400;
 
 }
 .color_div_title{
   font-weight:400;
-  font-family:jost;
+  font-family: "Jost", serif;
   font-size:20px;
   
 }
@@ -117,7 +117,7 @@
   cursor:pointer;
   font-size:20px;
   font-weight:400px;
-  font-family:jost;
+  font-family: "Jost", serif;
   color: black;
   position: relative;
   left: 10px;
