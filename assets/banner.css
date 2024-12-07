@@ -193,9 +193,11 @@
   .mobile_banner_button{
     position:absolute;
     top:20rem;
-    left:17%;
+    left:20%;
     width:30rem;
     height:5rem;
+    background-color:black;
+    color:white;
   }
 
  
