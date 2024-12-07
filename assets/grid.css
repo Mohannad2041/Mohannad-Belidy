@@ -34,12 +34,13 @@
 }
 .modal_img_container{
   flex:1;
+  left: 10px;
+  top : 10px;
 }
 .modal_img{
   position: relative;
   height:100%;
-  left: 10px;
-  top : 10px;
+  
 
 }
 
