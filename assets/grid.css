@@ -74,6 +74,12 @@
   word-spacing:0.1px;
 
 }
+.color_div_title{
+  font-weight:400;
+  font-family:jost;
+  font-size:20px;
+  
+}
 
 .modal_color_selection{
   position:relative;
