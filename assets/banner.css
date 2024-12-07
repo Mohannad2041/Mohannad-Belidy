@@ -13,14 +13,14 @@
 
 .left_banner_header{
     flex: 1;
-    font-family:jost;
+    font-family: "Jost", serif;
     color:black;
     font-size:4rem
 }
 .middle_banner_header{
   position:relative;
   flex:1;
-  font-family:jost;
+  font-family: "Jost", serif;
   color:black;
   text-align:center;
   vertical-align:middle;
@@ -28,7 +28,7 @@
 }
 .right_banner_header{
   flex:1;
-  font-family:jost;
+  font-family: "Jost", serif;
   color:black;
   text-align:right;
   
@@ -81,7 +81,7 @@
 .banner_text{
   flex:1;
   position:relative;
-  font-family:jost;
+  font-family: "Jost", serif;
   color:black;
   display:block;
   left:7rem;
@@ -97,12 +97,12 @@
 .subtitle{
   width:92%;
   color:black;
-  font-family: jost;
+  font-family: "Jost", serif;
   font-weight: 400;
   font-size:26px
 }
 .banner_button{
-  font-family:jost;
+  font-family: "Jost", serif;
   color:white;
   background: black;
   height:70px;
@@ -115,7 +115,7 @@
     background-color: #F5F5F5;
     width: 100%;
     text-align: center;
-    font-family:jost;
+    font-family: "Jost", serif;
     color:black;
     position:relative;
     z-index:3;
