@@ -142,9 +142,8 @@
 
    .mobile_banner_header{
      background-color: #F5F5F5;
-     display:block;
+     display:flex;
      z-index:2;
-     
      height:6rem;
   }
   .mobile_banner_header_title{
