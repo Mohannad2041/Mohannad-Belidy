@@ -55,14 +55,16 @@
 }
 
 .modal_title{
-  
+  font-family:jost;
+
 }
 .modal_price{
-  
 }
 
 .modal_description{
   font-size:12px;
+  font-family:jost;
+
 }
 
 .modal_color_selection{
