@@ -143,11 +143,14 @@
    .mobile_banner_header{
      background-color: #F5F5F5;
      display:block;
+     z-index:2;
      
   }
   
   .mobile_banner_content{
+    display:block;
   }
+  
 
  
 }
