@@ -65,6 +65,7 @@
 }
 .color_name{
   flex:1;
+  cursor:pointer;
 }
 
 
