@@ -42,19 +42,14 @@
 }
 
 .modal_color_selection{
-  
-}
-
-
-.color_Container{
   display:flex;
 }
 
-.colorChoice{
+.color_choice{
   display:flex;
 }
 
-.colorShowcase{
+.color_showcase{
   flex:0.2;
 }
 .colorName{
