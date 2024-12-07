@@ -128,10 +128,13 @@
   font-family: "Jost", serif;
   color: black;
   position: relative;
-  left: 10px;
-  top:10px
+ 
 }
 
+.color_name p{
+   left: 10px;
+  top:10px
+}
 .modal_size_selection{
   
 }
