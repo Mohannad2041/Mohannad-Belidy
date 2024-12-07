@@ -21,6 +21,7 @@
   background-color:white;
   border-style:solid;
   border-width:0.5px;
+  padding:20px
 }
 .modal_close_button{
   position:absolute;
