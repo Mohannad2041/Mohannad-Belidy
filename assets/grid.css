@@ -67,11 +67,12 @@
   font-family: "Jost", serif;
   word-spacing:0.1px;
   font-size:20px;
+  font-weight:400;
 
 }
 .modal_price{
   font-size:20px;
-  font-weight:600;
+  font-weight:400;
   font-family: "Lustria", serif;
 }
 
