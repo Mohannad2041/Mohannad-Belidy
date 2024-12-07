@@ -154,7 +154,7 @@
     flex-direction:column;
   }
   .mobile_banner_text{
-    flex:0.8;
+    flex:5;
     text-align:center;
   }
   .mobile_img_container{
