@@ -155,8 +155,9 @@
   }
   .menu_icon {
     position:relative;
-    
-  cursor: pointer;
+    cursor: pointer;
+    height:20px;
+    width:40px;
 }
 
 .bar1, .bar2, .bar3 {
