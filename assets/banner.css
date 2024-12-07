@@ -152,6 +152,7 @@
      height:6rem;
   }
   .menu_icon {
+    position:absolute;
   display: inline-block;
   cursor: pointer;
 }
