@@ -164,6 +164,8 @@
   }
   .mobile_img{
     width:150%;
+    position:relative;
+    right:100px;
     
   }
 
