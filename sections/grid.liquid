@@ -76,7 +76,7 @@
 
             colorChoice.addEventListener('click', () => {
             document.querySelectorAll('.color_choice').forEach(el => {
-              el.querySelectorAll('.color_name').style.backgroundColor = 'white';
+              el.querySelector('.color_name').style.backgroundColor = 'white';
               colorName.style.color = 'black';
             });
             colorName.style.backgroundColor = 'black'; 
