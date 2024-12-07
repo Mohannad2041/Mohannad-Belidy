@@ -10,7 +10,7 @@
 
 .product{
   cursor:pointer;
-  object-fit:cover;
+  /* object-fit:cover; */
   
 }
 
