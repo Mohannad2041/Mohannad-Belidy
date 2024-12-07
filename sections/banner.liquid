@@ -2,7 +2,7 @@
 <div class="page">
   <div class="mobile_banner_header">
     <div class="mobile_banner_header_title">
-      
+      {{ section.settings.mobile_banner_header_title }}
     </div>
     <div class="mobile_header_menu_icon">
       
@@ -24,8 +24,8 @@
   
   <div class="mobile_banner_content">
     <div class="mobile_banner_text">
-        <p class="mobile_title">{{ section.settings.banner_title }}</p>
-        <p class="mobile_subtitle">{{ section.settings.banner_subtitle }}</p>
+        <p class="mobile_title">{{ section.settings.mobile_banner_title }}</p>
+        <p class="mobile_subtitle">{{ section.settings.mobile_banner_subtitle }}</p>
     </div>
     <div class="mobile_img_container">
       <div class="mobile_banner_button">
@@ -114,13 +114,13 @@
           },
           {
             "type": "text",
-            "id": "mobile_title",
+            "id": "mobile_banner_title",
             "label": "Mobile's banner title",
             "default":"The Gift Guide"
           },
           {
             "type": "text",
-            "id": "mobile_subtitle",
+            "id": "mobile_banner_subtitle",
             "label": "Mobiles's banner subtitle",
             "default":"Discover Joy: Your Ultimate Holiday Gift Destination."
           },
