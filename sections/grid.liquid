@@ -77,8 +77,10 @@
             colorChoice.addEventListener('click', () => {
             document.querySelectorAll('.color_choice').forEach(el => {
               el.querySelector('span').style.backgroundColor = 'white';
+              colorName.style.color = 'black';
             });
             colorName.style.backgroundColor = 'black'; 
+            colorName.style.color = 'white';
           });
         });
           
