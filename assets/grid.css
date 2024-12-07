@@ -51,14 +51,15 @@
 .color_choice{
   display:flex;
   flex:1;
-  border-style: solid;
-  border-width:2px;
+  
 }
 
 .color_showcase{
   flex:0.1;
   height:20px;
   width:3px;
+  border-right-style: solid;
+  border-width:2px;
   
 }
 .color_name{
