@@ -157,7 +157,8 @@
     position:absolute;
     cursor: pointer;
     z-index:100;
-    padding:1px;
+    padding-top:1rem;
+    padding-left:2rem;
 }
 
 .bar1, .bar2, .bar3 {
