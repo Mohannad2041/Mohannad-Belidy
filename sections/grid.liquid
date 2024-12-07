@@ -69,13 +69,13 @@
             colorShowcase.classList.add('color_showcase');
             colorName.classList.add('color_name');
             colorShowcase.style.backgroundColor=color;
-            colorName.innertext=color;
+            colorName.innerText=color;
             colorChoice.appendChild(colorShowcase);  
             colorChoice.appendChild(colorName);
             modalColors.appendChild(colorChoice);
 
             colorChoice.addEventListener('click', () => {
-            document.querySelectorAll('.color-choice').forEach(el => {
+            document.querySelectorAll('.color_choice').forEach(el => {
               el.querySelector('span').style.backgroundColor = 'white';
             });
             colorName.style.backgroundColor = 'black'; 
