@@ -144,12 +144,15 @@
      background-color: #F5F5F5;
      display:block;
      z-index:2;
-     text-align:center;
+     
+     height:6rem;
+  }
+  .mobile_banner_header_title{
+    text-align:center;
      font-family:'Jost';
      font-size:3rem;
      font-weight:600;
      color:black;
-     height:6rem;
   }
   .menu_icon {
     position:absolute;
