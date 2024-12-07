@@ -156,13 +156,13 @@
   .menu_icon {
     position:relative;
     cursor: pointer;
-    height:100px;
+    height:100%;
     width:40px;
+    z-index:100;
 }
 
 .bar1, .bar2, .bar3 {
   position:relative;
-  display:block !important;
   width: 35px;
   height: 5px;
   background-color: black;
