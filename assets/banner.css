@@ -162,7 +162,7 @@
 
 .bar1, .bar2, .bar3 {
   position:relative;
-  display:block;
+  display:block !important;
   width: 35px;
   height: 5px;
   background-color: black;
