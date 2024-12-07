@@ -159,6 +159,7 @@
   }
   .mobile_img_container{
     flex:1;
+    overflow: hidden;
     
   }
   .mobile_img{
