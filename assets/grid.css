@@ -43,6 +43,7 @@
 
 .modal_color_selection{
   display:flex;
+  border: 2px;
 }
 
 .color_choice{
