@@ -55,6 +55,17 @@
   flex:1.2;
 }
 
+.modal_title{
+  
+}
+.modal_price{
+  
+}
+
+.modal_description{
+  
+}
+
 .modal_color_selection{
   display:flex;
   border-style: solid;
