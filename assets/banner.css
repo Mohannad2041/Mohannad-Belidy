@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
-@media (min-width:7000px) {
+@media (min-width:700px) {
 .page{
 }
 .banner_header{
@@ -132,7 +132,7 @@
   display:none;
 }
 }
-@media (max-width:7000px){
+@media (max-width:700px){
   .banner_header{
     display:none;
   }
