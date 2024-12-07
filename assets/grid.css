@@ -33,6 +33,7 @@
 .modal_content{
   display:flex;
   background-color:white;
+  height:40%
   
 }
 .modal_img_container{
