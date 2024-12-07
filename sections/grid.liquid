@@ -91,6 +91,8 @@
         const sizeSelect = document.createElement('select'); 
         sizeOption.values.forEach((size) => {
           const sizeOptionElement = document.createElement('option');
+          sizeSelect.classList.add('size_select');
+          sizeOptionElement.classList.add('size_option_element')
           sizeOptionElement.value = size;
           sizeOptionElement.innerText = size;
           sizeSelect.appendChild(sizeOptionElement);
