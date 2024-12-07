@@ -144,6 +144,8 @@
      background-color: #F5F5F5;
      display:block;
      z-index:2;
+     text-align:center;
+     
      
   }
   
@@ -160,6 +162,7 @@
   }
   .mobile_img{
     width:150%;
+    
   }
 
  
