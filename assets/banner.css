@@ -155,7 +155,11 @@
     text-align:center;
   }
   .mobile_img_container{
+    flex:1;
     
+  }
+  .mobile_img{
+    width:150%;
   }
 
  
