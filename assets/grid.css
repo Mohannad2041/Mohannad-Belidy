@@ -32,15 +32,17 @@
   background-color:white;
   
 }
+.modal_img_container{
+  flex:1;
+}
 .modal_img{
   position: relative;
-  flex:1;
   height:100%;
   left: 10px;
   top : 10px;
-  
-  
+
 }
+
 .modal_text{
   felx:1.2;
 }
