@@ -192,10 +192,10 @@
   }
   .mobile_banner_button{
     position:absolute;
-    top:20rem;
-    left:20%;
+    top:60rem;
+    left:22%;
     width:30rem;
-    height:15rem;
+    height:5rem;
     background-color:black;
     color:white;
   }
