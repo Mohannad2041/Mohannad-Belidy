@@ -130,6 +130,27 @@
   display:none;
 }
 
+@media screen and (max-width:768){
+  .banner_header{
+    display:none;
+  }
+
+  .banner_content{
+    display:none;
+  }
+
+
+   .mobile_banner_header{
+     background-color: #F5F5F5;
+     display:block;
+     
+  }
+  
+  .mobile_banner_content{
+  }
+
+ 
+}
 
 
 
