@@ -43,6 +43,22 @@
   border-width:0.1px;
   padding:15px
 }
+
+@media screen and (max-width:968px){
+  .modal{
+  display:none;
+  position:fixed;
+  top:20%;
+  left:18%;
+  width:70%;
+  height:60%;
+  z-index:100;
+  background-color:white;
+  border-style:solid;
+  border-width:0.1px;
+  padding:15px
+  }
+}
 .modal_close_button{
   position:absolute;
   top:5px;
