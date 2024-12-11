@@ -1,7 +1,7 @@
 {{'banner.css' |  asset_url | stylesheet_tag}}
 <div class="page">
   <div class="mobile_banner_header">
-    <div class="menu_icon" onclick="myFunction(this)">
+    <div class="menu_icon" onclick="toggleMenu(this)">
       <div class="bar1"></div>
       <div class="bar2"></div>
       <div class="bar3"></div>
@@ -10,6 +10,11 @@
       {{ section.settings.mobile_banner_header_title }}
     </div>
 
+  </div>
+  <div class="mobile_menu" id="mobileMenu">
+    <button type="button" class="menu_button">
+      {{ section.settings.right_banner_header }}
+    </button>
   </div>
   <div class="banner_header">
       <div class="left_banner_header">
@@ -64,8 +69,14 @@
 </div>
 
 <script>
-  function myFunction(x) {
-  x.classList.toggle("change");
+function toggleMenu(icon) {
+  icon.classList.toggle("change"); // Toggle icon animation
+  const menu = document.getElementById("mobileMenu");
+  if (menu.style.display === "flex") {
+    menu.style.display = "none"; // Hide the menu
+  } else {
+    menu.style.display = "flex"; // Show the menu
+  }
 }
 </script>
 {%  schema  %}
