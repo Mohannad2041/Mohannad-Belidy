@@ -234,7 +234,8 @@
     
   }
   .mobile_img{
-    width:240%;
+    background-size:200% 100%
+    width:1005;
     position:relative;
     right:37rem;
     
