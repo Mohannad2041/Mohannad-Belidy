@@ -13,11 +13,8 @@
   
 }
 
-mobile_menusss{
-  display:none !important;
-}
-menu_text{
-  display:none !important;
+.mobile_menu{
+  display:none ;
 }
 
 .left_banner_header{
@@ -206,7 +203,7 @@ menu_text{
 .change .bar3 {
   transform: translate(0, -11px) rotate(45deg);
 }
-  .mobile_menusss {
+  .mobile_menu{
     display: none;
     position: relative;
     width: 100%;
