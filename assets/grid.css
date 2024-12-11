@@ -108,7 +108,7 @@
 
 .modal_description{
   position:relative;
-  font-size:0.5vw;
+  font-size:0.7vw;
   font-family: "Jost", serif;
   word-spacing:0.1px;
   font-weight:400;
@@ -118,7 +118,7 @@
 @media screen and (max-width:968px){
   .modal_description{
   position:relative;
-  font-size:2vw;
+  font-size:1.6vw;
   font-family: "Jost", serif;
   word-spacing:0.1px;
   font-weight:400;
