@@ -206,7 +206,8 @@
     height: 10rem;
     background-color: #F5F5F5;
     z-index: 1000; 
-    text-align:center
+    text-align:center;
+    flex-direction:column;
   }
   .menu_text{
     position:relative;
