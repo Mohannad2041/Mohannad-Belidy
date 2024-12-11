@@ -209,7 +209,7 @@
   height: 40%;
   background-color: grey;
   z-index: 1000; 
-  align-items: center;
+  text-align:center
 }
   .menu_button {
   font-size: 18px;
