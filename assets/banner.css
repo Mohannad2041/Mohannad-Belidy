@@ -36,7 +36,7 @@
   
 }
 .header_button:hover{
-  background-position: -100%;
+  background-position: -100% 0;
   color:white;
 }
 
