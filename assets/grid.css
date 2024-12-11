@@ -9,7 +9,7 @@
   justify-content:space-around;
   display: flex;
   flex-wrap: wrap;
-  left:1rem;
+  padding:1rem;
 }
 
 .product{
