@@ -176,6 +176,8 @@
           }
         }
         alert('Product added to Cart!');
+        modal.style.display = 'none';
+        const updatedCart = await fetch('/cart.js').then(res => res.json());
         
       }
       catch (error){
