@@ -127,6 +127,7 @@
 .banner_button:hover{
   background-position: -100% 0; 
   color:black;
+  box-shadow:1
 }
 
 .banner_footer{
