@@ -126,8 +126,9 @@
     modalCloseButton.addEventListener('click', ()=>{
       modal.style.display='none';
     })
-    console.log(selectedColor +' ' + selectedSize);
     addToCartForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      console.log(selectedColor +' ' + selectedSize);
       const selectedVariant =variants.find(variant => {
         const includesColor = variant.options.includes(selectedColor);
         const includesSize = variant.options.includes(selectedSize);
