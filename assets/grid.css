@@ -9,12 +9,14 @@
   justify-content:space-around;
   display: flex;
   flex-wrap: wrap;
+  left:1rem;
 }
 
 .product{
   flex: 1 1 calc(33% - 1rem);
   cursor:pointer;
   object-fit:cover;
+  
   
 }
 
