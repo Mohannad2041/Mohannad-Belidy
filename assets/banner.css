@@ -58,6 +58,7 @@
 
 .img1_container{
   display:flex;
+  justify-content:center;
   position:relative;
   margin-top:-25rem;
   flex: 1;
