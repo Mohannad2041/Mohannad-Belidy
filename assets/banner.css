@@ -211,15 +211,16 @@
   text-align:center
 }
   .menu_button {
-  font-size: 18px;
-  height: 30px;
-  color: black;
-  background-color: yellow;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  text-align:center
-}
+    position:relative;
+    font-size: 18px;
+    height: 30px;
+    color: black;
+    background-color: yellow;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align:center
+  }
   
   .mobile_banner_content{
     display:flex;
