@@ -1,4 +1,5 @@
 {{'banner.css' |  asset_url | stylesheet_tag}}
+<!-- creating layout for mobile version banner header -->
   <div class="mobile_banner_header">
     <div class="menu_icon" onclick="toggleMenu(this)">
       <div class="bar1"></div>
@@ -8,10 +9,10 @@
     <div class="mobile_banner_header_title">
       {{ section.settings.mobile_banner_header_title }}
     </div>
-
+<!-- creating the mobile menu layout -->
   </div>
   <div class="mobile_menu" id="mobileMenu">
-    <p class="menu_text"> Find the ideal gift for your loved ones.</p>
+    <p class="menu_text"> {{ section.settings.middle_banner_header }}</p>
     <button type="button" class="menu_button">
       {{ section.settings.right_banner_header }}
     </button>
