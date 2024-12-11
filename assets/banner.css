@@ -222,6 +222,7 @@
     width:18rem;
     cursor:pointer;
     background: yellow;
+    text-align:center;
   }
 
   .mobile_banner_content{
