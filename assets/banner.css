@@ -217,13 +217,13 @@
   }
   .menu_button {
     position:relative;
-    top:0;
+    bottom:10px;
     height:4rem;
     width:18rem;
     cursor:pointer;
     background: yellow;
     text-align:center;
-    top:10px;
+    
   }
 
   .mobile_banner_content{
