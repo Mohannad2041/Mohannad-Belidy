@@ -18,19 +18,23 @@
         "banner_title": "The Gift Guide",
         "banner_subtitle": "Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.",
         "banner_button": "SHOP NOW &#8594;",
-        "banner_footer": "SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL"
+        "banner_footer": "SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL",
+        "mobile_banner_header_title": "TISSO VISON",
+        "mobile_banner_title": "The Gift Guide",
+        "mobile_banner_subtitle": "Discover Joy: Your Ultimate Holiday Gift Destination.",
+        "mobile_banner_button": "SHOP NOW   &#8594;"
       }
     },
     "grid": {
       "type": "grid",
       "settings": {
         "product_list": [
-          "black-leather-bag",
           "blue-silk-tuxedo",
           "chequered-red-shirt",
           "classic-leather-jacket",
           "classic-varsity-top",
-          "dark-denim-top"
+          "dark-denim-top",
+          "dark-winter-jacket"
         ]
       }
     },
