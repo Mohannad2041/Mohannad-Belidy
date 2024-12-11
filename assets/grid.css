@@ -3,7 +3,8 @@
 
 .section_title{
   font-family: "Lustria", serif;
-  font-size:2rem
+  font-size:3.5rem;
+  color:black;
 }
 .grid{
   position:relative;
