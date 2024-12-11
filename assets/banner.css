@@ -208,6 +208,11 @@
     z-index: 1000; 
     text-align:center
   }
+  .menu_text{
+    text-align:center;
+    position:relative;
+    padding:2rem;
+  }
   .menu_button {
     position:relative;
     font-size: 18px;
