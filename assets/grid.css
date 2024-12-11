@@ -177,7 +177,7 @@
 }
 
 .add_to_cart_button:hover{
-  background-color:yellow;
+  background-position: -100% 0; 
   color:black;
   
 }
