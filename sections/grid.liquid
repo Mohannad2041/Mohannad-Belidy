@@ -5,7 +5,7 @@
 <div class="grid">
     {% for product in section.settings.product_list %}
       <div class="product" data-image = "{{ product.featured_image|img_url:"600x600" }}" data-title="{{ product.title }}" data-price="{{ product.price | money }}" data-description= "{{ product.description }}" 
-        data-options= "{{ product.options_with_values | json | escape}}" >
+        data-options= "{{ product.options_with_values | json | escape}}" data-variants="{{ product.variants | json | escape }}">
         <img src="{{ product.featured_image| img_url: '480x480' }}" alt="{{ product.title }}" width="600rem" height="600rem">
         
 
@@ -38,10 +38,11 @@
   <div id="modalSizes" class="modal_size_selection">
   </div>
 
-  <div class="add_to_cart">
-    <button type="button" class="add_to_cart_button">  ADD TO CART &#8594; </button>
-    
-  </div>
+  <form id="addToCartForm" action="/cart/add" method="post">
+    <input type="hidden" id="variantIdInput" name="id" value="">
+    <input type="hidden" id="quantityInput" name="quantity" value="1">
+    <button type="submit" class="add_to_cart_button"> ADD TO CART &#8594; </button>
+  </form>
 </div>
 
 <script>
@@ -49,13 +50,19 @@
     
     const modal = document.getElementById('modal');
     const modalCloseButton=document.getElementById('modalCloseButton');
+    const addToCartForm = document.getElementById('addToCartForm');
+    const quantityInput = document.getElementById('quantityInput');
+    const variantIdInput= document.getElementById('variantIdInput')
     document.querySelectorAll('.product').forEach((product) =>{
       product.addEventListener('click',(e) =>{
-        const productData= e.currentTarget.dataset
+        const productData= e.currentTarget.dataset;
+        const variants= JSON.parse(productData.variants);
+        console.log(variants);
         document.getElementById('modalImage').src=productData.image;
         document.getElementById('modalTitle').innerText=productData.title;
         document.getElementById('modalPrice').innerText=productData.price;
         document.getElementById('modalDescription').innerHTML=productData.description;
+        
 
         
         const options=JSON.parse(productData.options);
@@ -115,6 +122,10 @@
     });
     modalCloseButton.addEventListener('click', ()=>{
       modal.style.display='none';
+    })
+
+    addToCartForm.addEventListener('submit', (e) => {
+      console.log()
     })
     
   })
