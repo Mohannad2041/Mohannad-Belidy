@@ -134,7 +134,7 @@
     modalCloseButton.addEventListener('click', ()=>{
       modal.style.display='none';
     })
-    addToCartForm.addEventListener('submit', await (e) => {
+    addToCartForm.addEventListener('submit', async (e) => {
       e.preventDefault();
       console.log(selectedColor +' ' + selectedSize);
       
