@@ -211,7 +211,6 @@
   .menu_text{
     position:relative;
     text-align:center;
-    
     padding:2rem;
   }
   .menu_button {
@@ -223,7 +222,7 @@
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    text-align:center
+    text-align:right
   }
   
   .mobile_banner_content{
