@@ -43,7 +43,7 @@
 .header_button{
   background: #FFF544;
   height:4rem;
-  width:18rem
+  width:18rem;
   cursor:pointer;
   background-size: 200% 100%;
   background: linear-gradient(to right,yello 50%,black 50%);
