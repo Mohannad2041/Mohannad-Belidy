@@ -215,6 +215,8 @@
     padding:2rem;
   }
   .menu_button {
+    position:relative;
+    top:0;
   height:4rem;
   width:18rem;
   cursor:pointer;
