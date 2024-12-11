@@ -59,8 +59,7 @@
     document.querySelectorAll('.product').forEach((product) =>{
       product.addEventListener('click',(e) =>{
         const productData= e.currentTarget.dataset;
-        const variants= JSON.parse(productData.variants);
-        console.log(variants);
+        variants= JSON.parse(productData.variants);
         document.getElementById('modalImage').src=productData.image;
         document.getElementById('modalTitle').innerText=productData.title;
         document.getElementById('modalPrice').innerText=productData.price;
