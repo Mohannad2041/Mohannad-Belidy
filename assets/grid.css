@@ -172,6 +172,7 @@
   position:relative;
   top:80px;
   cursor:pointer;
+  transition:all 0.6s ease;
   
 }
 
