@@ -93,6 +93,7 @@
             colorName.style.backgroundColor = 'black'; 
             colorName.style.color = 'white';
             const selectedColor = color;
+            console.log(selectedColor);
           });
         });
           
@@ -112,6 +113,7 @@
 
         sizeSelect.addEventListener('change', () => {
           const selectedSize = sizeSelect.value;
+          c
         });
       }
 
@@ -133,6 +135,7 @@
         alert('Fill missing options first.');
         
       }
+      cnsole.log(selectedVariant);
       variantIdInput.value=selectedVariant.id;
       const formData = new FormData();
       formData.append('id', selectedVariant.id);
@@ -146,7 +149,7 @@
         return response.json();
       })
       .then(data => {
-        alert('Product addet to cart!');
+        alert('Product added to cart!');
       })
       .catch((error) => {
         console.error('Error adding product to cart:', error);
