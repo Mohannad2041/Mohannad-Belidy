@@ -137,9 +137,7 @@
     addToCartForm.addEventListener('submit', (e) => {
       e.preventDefault();
       console.log(selectedColor +' ' + selectedSize);
-      if(selectedColor=='Black' && selectedSize=='M'){
-        const addedProduct= pr
-      }
+      
       const selectedVariant =variants.find(variant => {
         const includesColor = variant.options.includes(selectedColor);
         const includesSize = variant.options.includes(selectedSize);
@@ -155,25 +153,39 @@
       const formData = new FormData();
       formData.append('id', selectedVariant.id);
       formData.append('qunatity', quantityInput.value);
-
-      fetch('/cart/add.js',{
-        method : 'POST',
-        body : formData
-      })
-      .then(response => {
-        return response.json();
-      })
-      .then(data => {
-        alert('Product added to cart!');
-      })
-      .catch((error) => {
-        console.error('Error adding product to cart:', error);
-        alert('Failed to add product to cart');
-      });
+      try{
+        fetch('/cart/add.js',{
+          method : 'POST',
+          body : formData
+        })
+        if(selectedColor=='Black' && selectedSize=='M'){
+          const additionalProductResponse=await fetch('/products/soft-winter-jacket.js');
+          const additionalProduct= await additionalProductResponse.json();
+          const additionalProductVariant=additionalProduct.variants.find((variant) =>{
+            return variant.options.includes(selectedColor) && variant.options.includes(selectedSize);
+          });
+          if(additionalProductVariant){
+            const additionalProductFormData = new FormData();
+            additionalProductFormData.append('id',jacketVariant.id);
+            additionalProductFormData.append('quantity','1');
+            fetch('/cart/add.js',{
+            method : 'POST',
+            body : additionalProductFormData
+          });
+            console.log('Additional product added succesfully');
+          }
+        }
+        alert('Product added to Cart!');
+        
+      }
+      catch (error){
+        console.error('Error adding product to cart', error);
+        alert('Failed to add producta to cart');
+      }
       
-    })
+    });
     
-  })
+  });
   
 </script>
 
