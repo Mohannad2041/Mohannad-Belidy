@@ -16,8 +16,13 @@
   flex: 1 1 calc(33% - 1rem);
   cursor:pointer;
   object-fit:cover;
-  
-  
+}
+@media screen and (max-width:968px){
+  .product{
+  flex: 1 1 calc(50% - 1rem);
+  cursor:pointer;
+  object-fit:cover;
+}
 }
 
 .modal{
