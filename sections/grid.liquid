@@ -152,12 +152,12 @@
       variantIdInput.value=selectedVariant.id;
       const formData = new FormData();
       formData.append('id', selectedVariant.id);
-      formData.append('qunatity', quantityInput.value);
+      formData.append('quantity', quantityInput.value);
       try{
         fetch('/cart/add.js',{
           method : 'POST',
           body : formData
-        })
+        });
         if(selectedColor=='Black' && selectedSize=='M'){
           const additionalProductResponse=await fetch('/products/soft-winter-jacket.js');
           const additionalProduct= await additionalProductResponse.json();
