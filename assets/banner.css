@@ -16,7 +16,9 @@
 mobile_menu{
   display:none;
 }
-
+menu_text{
+  display:none;
+}
 
 .left_banner_header{
   flex: 1;
