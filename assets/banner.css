@@ -13,6 +13,10 @@
   
 }
 
+mobile.menu{
+  display:none;
+}
+
 .left_banner_header{
   flex: 1;
   font-family: "Jost", serif;
