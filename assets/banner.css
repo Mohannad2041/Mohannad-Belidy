@@ -14,10 +14,7 @@
 }
 
 mobile_menu{
-  display:none;
-}
-menu_text{
-  display:none;
+  display:none !important;
 }
 
 .left_banner_header{
