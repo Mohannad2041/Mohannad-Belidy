@@ -209,8 +209,9 @@
     text-align:center
   }
   .menu_text{
-    text-align:center;
     position:relative;
+    text-align:center;
+    
     padding:2rem;
   }
   .menu_button {
