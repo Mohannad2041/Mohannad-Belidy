@@ -267,7 +267,7 @@
     
   }
   .mobile_banner_button{
-    position:absolute;
+    position:relative;
     top:60rem;
     left:28%;
     width:28rem;
