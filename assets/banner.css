@@ -217,7 +217,7 @@
   }
   .menu_button {
     position:relative;
-    bottom60px;
+    bottom:60px;
     left:34vw;
     height:4rem;
     width:18rem;
