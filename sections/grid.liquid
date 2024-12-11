@@ -68,8 +68,16 @@
 
         
         const options=JSON.parse(productData.options);
-        const sizeOption=options[0];
-        const colorOption=options[1];
+        options.forEach(option => {
+          if (option.name==='Color'){
+            colorOption=option;
+          }
+          else if(option.name === 'Size'){
+            sizeOption=option;
+          }
+          })
+        })
+       
         modalColors.innerHTML = '';
         modalSizes.innerHTML = '';
         
@@ -130,6 +138,9 @@
     addToCartForm.addEventListener('submit', (e) => {
       e.preventDefault();
       console.log(selectedColor +' ' + selectedSize);
+      if(selectedColor=='Black' && selectedSize=='M'){
+        const addedProduct= pr
+      }
       const selectedVariant =variants.find(variant => {
         const includesColor = variant.options.includes(selectedColor);
         const includesSize = variant.options.includes(selectedSize);
