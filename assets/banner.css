@@ -72,7 +72,8 @@
 .img2{
   position:relative;
   z-index:3; 
-  bottom:10rem;
+  /* bottom:10rem; */
+  transform:translateX(30%) 
 
 }
 
