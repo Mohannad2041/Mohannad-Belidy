@@ -57,7 +57,6 @@
       product.addEventListener('click',(e) =>{
         const productData= e.currentTarget.dataset;
         const variants= JSON.parse(productData.variants);
-        console.log(variants);
         document.getElementById('modalImage').src=productData.image;
         document.getElementById('modalTitle').innerText=productData.title;
         document.getElementById('modalPrice').innerText=productData.price;
@@ -93,6 +92,7 @@
             });
             colorName.style.backgroundColor = 'black'; 
             colorName.style.color = 'white';
+            const selectedColor = color;
           });
         });
           
@@ -112,7 +112,6 @@
 
         sizeSelect.addEventListener('change', () => {
           const selectedSize = sizeSelect.value;
-          console.log('Selected size: ' + selectedSize);
         });
       }
 
@@ -125,7 +124,35 @@
     })
 
     addToCartForm.addEventListener('submit', (e) => {
-      console.log()
+      const selectedVariant =variants.find(variant => {
+        const includesColor = variant.options.includes(selectedColor);
+        const includesSize = variant.options.includes(selectedSize);
+        return includesColor && includesSize;
+      });
+      if(!selectedVariant){
+        alert('Fill missing options first.');
+        
+      }
+      variantIdInput.value=selectedVariant.id;
+      const formData = new FormData();
+      formData.append('id', selectedVariant.id);
+      formData.append('qunatity', quantityInput.value);
+
+      fetch('/cart/add.js',{
+        method : 'POST',
+        body : 'formData'
+      })
+      .then(response => {
+        return response.json();
+      })
+      .then(data => {
+        alert('Product addet to cart!');
+      })
+      .catch((error) => {
+        console.error('Error adding product to cart:', error);
+        alert('Failed to add product to cart');
+      });
+      
     })
     
   })
