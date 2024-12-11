@@ -234,10 +234,10 @@
     
   }
   .mobile_img{
-    background-size:200% 100%
-    width:1005;
+    width:200%;
     position:relative;
-    right:37rem;
+    overflow:hidden
+    /* right:37rem; */
     
   }
   .mobile_banner_button{
