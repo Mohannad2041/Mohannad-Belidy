@@ -3,7 +3,7 @@
 
 .section_title{
   font-family: "Lustria", serif;
-  font-size:3.5rem;
+  font-size:4rem;
   color:black;
   padding:5rem;
 }
@@ -13,11 +13,11 @@
   display: flex;
   flex-wrap: wrap;
   padding:1rem;
-  gap:1rem;
+  gap:3rem;
 }
 
 .product{
-  flex: 1 1 calc(33% - 1rem);
+  flex: 1 1 calc(28% - 10rem);
   cursor:pointer;
   object-fit:cover;
 }
