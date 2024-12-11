@@ -6,7 +6,7 @@
     {% for product in section.settings.product_list %}
       <div class="product" data-image = "{{ product.featured_image|img_url:"600x600" }}" data-title="{{ product.title }}" data-price="{{ product.price | money }}" data-description= "{{ product.description }}" 
         data-options= "{{ product.options_with_values | json | escape}}" data-variants="{{ product.variants | json | escape }}">
-        <img class="product_img" src="{{ product.featured_image| img_url: '480x480' }}" alt="{{ product.title }}" width="600rem" height="600rem">
+        <img class="product_img" src="{{ product.featured_image| img_url: '480x480' }}" alt="{{ product.title }}" width="100%" height="auto">
         
 
       </div>
