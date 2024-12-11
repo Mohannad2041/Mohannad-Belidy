@@ -49,7 +49,7 @@
   display:none;
   position:fixed;
   top:20%;
-  left:18%;
+  left:17%;
   width:70%;
   height:60%;
   z-index:100;
@@ -108,13 +108,22 @@
 
 .modal_description{
   position:relative;
-  font-size:14px;
+  font-size:1vw;
   font-family: "Jost", serif;
   word-spacing:0.1px;
   font-weight:400;
   top:-25px;
   
-
+}
+@media screen and (max-width:968px){
+  .modal_description{
+  position:relative;
+  font-size:2vw;
+  font-family: "Jost", serif;
+  word-spacing:0.1px;
+  font-weight:400;
+  top:-25px;
+  }
 }
 .color_div_title{
   font-weight:400;
