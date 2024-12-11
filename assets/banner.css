@@ -115,6 +115,7 @@
 }
 .banner_button:hover{
   background-position: -100% 0; 
+  color:black;
 }
 
 .banner_footer{
