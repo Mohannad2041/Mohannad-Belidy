@@ -236,7 +236,8 @@
   .mobile_img{
     width:200%;
     position:relative;
-    overflow:hidden
+    overflow:hidden;
+    transform:translateX(-50%)
     /* right:37rem; */
     
   }
