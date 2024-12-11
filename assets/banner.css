@@ -113,7 +113,7 @@
   
 }
 .banner_button:hover{
-  background-position: -100% ; 
+  background-position: -100% 0; 
 }
 
 .banner_footer{
