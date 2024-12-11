@@ -1,7 +1,7 @@
 {{'grid.css' |  asset_url | stylesheet_tag}}
 
 <p class="section_title">Tisso vison in the wild</p>
-
+<!-- Creating the grid layout and setting product date for use in javascript -->
 <div class="grid">
     {% for product in section.settings.product_list %}
       <div class="product" data-image = "{{ product.featured_image|img_url:"600x600" }}" data-title="{{ product.title }}" data-price="{{ product.price | money }}" data-description= "{{ product.description }}" 
@@ -12,7 +12,7 @@
       </div>
     {% endfor %}
 </div>
-
+<!-- Creating Modal layout -->
 <div id="modal" class="modal">
     <span id="modalCloseButton" class="modal_close_button">
       &#10006;
@@ -47,7 +47,7 @@
 
 <script>
   document.addEventListener('DOMContentLoaded',()=>{
-    
+    //creating constants for the html elements 
     const modal = document.getElementById('modal');
     const modalCloseButton=document.getElementById('modalCloseButton');
     const addToCartForm = document.getElementById('addToCartForm');
@@ -55,7 +55,7 @@
     const variantIdInput= document.getElementById('variantIdInput')
     let selectedColor=null;
     let selectedSize = null;
-    
+    //loading product data from the data product set up at the html element when a product is pressed
     document.querySelectorAll('.product').forEach((product) =>{
       product.addEventListener('click',(e) =>{
         const productData= e.currentTarget.dataset;
@@ -68,6 +68,7 @@
 
         
         const options=JSON.parse(productData.options);
+        //setting up color and size constants to load available options dynamically 
         options.forEach(option => {
           if (option.name==='Color'){
             colorOption=option;
@@ -76,10 +77,10 @@
             sizeOption=option;
           }
         })
-       
+       //setting options as empty to restart whenever option is changed
         modalColors.innerHTML = '';
         modalSizes.innerHTML = '';
-        
+        //loading color options and creating dynamic html elements aswell
         if(colorOption){
           colorOption.values.forEach((color) =>{
             const colorChoice = document.createElement('div');
@@ -89,12 +90,13 @@
             const colorName=document.createElement('span');
             colorShowcase.classList.add('color_showcase');
             colorName.classList.add('color_name');
+            //setting background color of the strip sample to be the same as the option color
             colorShowcase.style.backgroundColor=color;
             colorName.innerHTML='<p>'+color+'</p>';
             colorChoice.appendChild(colorShowcase);  
             colorChoice.appendChild(colorName);
             modalColors.appendChild(colorChoice);
-
+            //setting event so when a color is clicked the option is highlighted
             colorChoice.addEventListener('click', () => {
             document.querySelectorAll('.color_choice').forEach(el => {
               el.querySelector('.color_name').style.backgroundColor = 'white';
@@ -103,12 +105,11 @@
             colorName.style.backgroundColor = 'black'; 
             colorName.style.color = 'white';
             selectedColor = color;
-            console.log(selectedColor);
           });
         });
           
         }
-
+        //setting size option and creating dynamic html elements 
         if (sizeOption) {
         const sizeSelect = document.createElement('select'); 
         sizeOption.values.forEach((size) => {
@@ -126,29 +127,30 @@
           
         });
       }
-
-
+        //switching display of modal  from none to block when a product is clicked to show the product modal
         modal.style.display='block';
       });
     });
+    //closing modal when the x button is pressed
     modalCloseButton.addEventListener('click', ()=>{
       modal.style.display='none';
     })
+    
     addToCartForm.addEventListener('submit', async (e) => {
       e.preventDefault();
-      console.log(selectedColor +' ' + selectedSize);
-      
+      //searching for the variant where both color and size that the user selected match with
       const selectedVariant =variants.find(variant => {
         const includesColor = variant.options.includes(selectedColor);
         const includesSize = variant.options.includes(selectedSize);
         return includesColor && includesSize;
       });
       if(!selectedVariant){
+        //error alert for when user presses add to cart while not choosing options
         alert('Fill missing options first.');
         return;
         
       }
-      console.log(selectedVariant);
+      //setting the variant id that the api needs for the request and appending the data to the form
       variantIdInput.value=selectedVariant.id;
       const formData = new FormData();
       formData.append('id', selectedVariant.id);
@@ -158,12 +160,17 @@
           method : 'POST',
           body : formData
         });
+        
+        //setting logic for whenever a black medium product is added to cart the soft winter jacket will be then automatically added to cart
         if(selectedColor=='Black' && selectedSize=='M'){
+          //gettig the soft winter jacket produt details and then getting the black medium variant aswell
           const additionalProductResponse=await fetch('/products/dark-winter-jacket.js');
           const additionalProduct= await additionalProductResponse.json();
           const additionalProductVariant=additionalProduct.variants.find((variant) =>{
             return variant.options.includes(selectedColor) && variant.options.includes(selectedSize);
           });
+          
+          //if the soft winter jacket with the requested variant is found a new form is created to add the product to the cart
           if(additionalProductVariant){
             const additionalProductFormData = new FormData();
             additionalProductFormData.append('id',additionalProductVariant.id);
@@ -190,7 +197,8 @@
   
 </script>
 
-{% schema %}
+<!-- setting schema to select products to display at the home page-->
+{% schema %} 
   {
     "name": "grid",
     "settings": [
