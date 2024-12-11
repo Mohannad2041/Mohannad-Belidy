@@ -159,7 +159,7 @@
           body : formData
         });
         if(selectedColor=='Black' && selectedSize=='M'){
-          const additionalProductResponse=await fetch('/products/soft-winter-jacket.js');
+          const additionalProductResponse=await fetch('/products/dark-winter-jacket.js');
           const additionalProduct= await additionalProductResponse.json();
           const additionalProductVariant=additionalProduct.variants.find((variant) =>{
             return variant.options.includes(selectedColor) && variant.options.includes(selectedSize);
