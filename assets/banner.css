@@ -221,9 +221,8 @@
     color: black;
     background-color: yellow;
     border: none;
-    padding: 10px 20px;
     cursor: pointer;
-    text-align:right
+    text-align:center
   }
   
   .mobile_banner_content{
