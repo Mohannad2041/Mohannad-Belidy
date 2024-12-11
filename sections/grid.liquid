@@ -154,7 +154,7 @@
       formData.append('id', selectedVariant.id);
       formData.append('quantity', quantityInput.value);
       try{
-        fetch('/cart/add.js',{
+        const response = await fetch('/cart/add.js',{
           method : 'POST',
           body : formData
         });
@@ -166,7 +166,7 @@
           });
           if(additionalProductVariant){
             const additionalProductFormData = new FormData();
-            additionalProductFormData.append('id',jacketVariant.id);
+            additionalProductFormData.append('id',additionalProductVariant.id);
             additionalProductFormData.append('quantity','1');
             fetch('/cart/add.js',{
             method : 'POST',
