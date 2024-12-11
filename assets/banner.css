@@ -271,9 +271,10 @@
     
   }
   .mobile_banner_button{
-    position:relative;
-    bottom:6rem;
-    left:28%;
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
     width:28rem;
     height:6rem;
     background-color:black;
