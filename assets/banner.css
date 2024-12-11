@@ -32,12 +32,10 @@
   font-family: "Jost", serif;
   color:black;
   text-align:right;
-  cursor:pointer;
-  background-size: 200% 100%;
-  background: linear-gradient(to right,yello 50%,black 50%);
+ 
   
 }
-.right_banner_header:hover{
+.header_button:hover{
   background-position: -100%;
   color:white;
 }
@@ -46,6 +44,9 @@
   background: #FFF544;
   height:4rem;
   width:18rem
+  cursor:pointer;
+  background-size: 200% 100%;
+  background: linear-gradient(to right,yello 50%,black 50%);
 
 }
 .img1_container{
