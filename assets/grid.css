@@ -12,6 +12,7 @@
 }
 
 .product{
+  flex: 1 1 calc(33% - 1rem);
   cursor:pointer;
   object-fit:cover;
   
